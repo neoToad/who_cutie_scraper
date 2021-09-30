@@ -3,6 +3,11 @@ from bs4 import BeautifulSoup
 from selenium.webdriver import Chrome
 from lxml import html
 
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 driver = Chrome(executable_path='chromedriver.exe')
 driver.get('https://whocutie.aliexpress.com/store/all-wholesale-products/2996039.html?spm=a2g0o.store_pc_home" \
       ".pcShopHead_6241067.99')
